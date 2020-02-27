@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="admin/style.css">
+</head>
+<body>
+	<div>
+			<h1>Welcome Bangabandhu Online Book Store,<%= user.uname%></h1>	
+	</div>
+    <a href="/home/Profile">Profile</a>   |
+	<a href="/home/adduser">Add New Book</a> |
+	<a href="/home/view_users">View Customer</a> |
+	<a href="/home/view_book">View BookList</a> |
+	<a href="/logout">Logout</a><br>
+
+
+
+	<h2>Your Profile</h2>
+
+
+
+    Id:  <%= user.uid %> <br>
+    Name:  <%= user.uname %> <br>
+	Username:  <%= user.username %> <br>
+	
+	Password: <%= user.password %> <br>
+	Phone: <%= user.phone %> <br>
+	Email: <%= user.email %><br>
+	Age: <%= user.age %><br>
+	Gender: <%= user.gender %><br>
+
+	<td>
+					<input type="submit" name="" value="Update"> 
+	</td>
+</body>
+</html>
